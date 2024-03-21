@@ -1,80 +1,148 @@
-const mayislar = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+// const mayislar = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
 
-const toplamMayis = mayislar.reduce((toplam, deger) => toplam + deger, 0);
+// const toplamMayis = mayislar.reduce((toplam, deger) => toplam + deger, 0);
 
-console.log("TOPLAM MAYIS:", toplamMayis);
+// console.log("TOPLAM MAYIS:", toplamMayis);
 
-const zamliMaasToplami = mayislar
-  .filter((m) => m >= 6000 && m <= 10000)
-  .map((m) => m * 1.1)
-  .reduce((t, m) => t + m);
+// const zamliMaasToplami = mayislar
+//   .filter((m) => m >= 6000 && m <= 10000)
+//   .map((m) => m * 1.1)
+//   .reduce((t, m) => t + m);
 
-console.log("ZAMLI MAASLAR:", zamliMaasToplami);
+// console.log("ZAMLI MAASLAR:", zamliMaasToplami);
 
-const ages = [18, 22, 78, 34, 78, 79, 15];
-const check = ages.every((age) => age >= 18);
-check ? console.log("All ages are over 18") : console.log("Sum are under 18");
+// const ages = [18, 22, 78, 34, 78, 79, 15];
+// const check = ages.every((age) => age >= 18);
+// check ? console.log("All ages are over 18") : console.log("Sum are under 18");
 
-const over80 = ages.some((a) => a >= 80);
-console.log(over80);
+// const over80 = ages.some((a) => a >= 80);
+// console.log(over80);
 
-const ageBigThan30First = ages.find((age) => age >= 30);
-const ageBigThan30Last = ages.findLast((age) => age >= 30);
-console.log(ageBigThan30First, ageBigThan30Last);
+// const ageBigThan30First = ages.find((age) => age >= 30);
+// const ageBigThan30Last = ages.findLast((age) => age >= 30);
+// console.log(ageBigThan30First, ageBigThan30Last);
 
-const foundIndex = ages.findIndex((age) => age > 18);
-console.log(foundIndex);
+// const foundIndex = ages.findIndex((age) => age > 18);
+// console.log(foundIndex);
 
-const car = {
-  brand: "Mercedes",
-  model: 2020,
-  engine: 2000,
-  speed: 5,
-  color: ["pink", "black", "blue", "green"],
-};
+// const car = {
+//   brand: "Mercedes",
+//   model: 2020,
+//   engine: 2000,
+//   speed: 5,
+//   color: ["pink", "black", "blue", "green"],
+// };
 
-console.log(car);
+// console.log(car);
 
-console.log(car.brand);
-console.log(car.color[0]);
+// console.log(car.brand);
+// console.log(car.color[0]);
 
-console.log(car.color);
-car.color.forEach((c) => console.log(c));
+// console.log(car.color);
+// car.color.forEach((c) => console.log(c));
 
-console.log(car.Engine);
+// console.log(car.Engine);
 
-car.speed = 7;
-car.color = "Morcivert";
-car.class = "E";
+// car.speed = 7;
+// car.color = "Morcivert";
+// car.class = "E";
 
-console.log(car);
+// console.log(car);
 
-console.log("ENGINE:", car["engine"]);
+// console.log("ENGINE:", car["engine"]);
 
-// const myKey = prompt(
-//   "Araba ile ilgili Neyi ogrenmek istersiniz: speed,color,engine ... "
-// );
+// // const myKey = prompt(
+// //   "Araba ile ilgili Neyi ogrenmek istersiniz: speed,color,engine ... "
+// // );
 
-// alert(car[myKey]);
+// // alert(car[myKey]);
 
-const myCar = new Object();
-myCar.brand = "Mercedes";
-myCar.model = 2022;
-myCar.speed = 7;
+// const myCar = new Object();
+// myCar.brand = "Mercedes";
+// myCar.model = 2022;
+// myCar.speed = 7;
 
-console.log(myCar.speed);
-console.log(myCar["model"]);
+// console.log(myCar.speed);
+// console.log(myCar["model"]);
 
-console.log(myCar);
+// console.log(myCar);
 
-function Personel(id, name, age, salary) {
-  this.id = id;
-  this.name = name;
-  this.age = age;
-  this.salary = salary;
-}
+// function Personel(id, name, age, salary) {
+//   this.id = id;
+//   this.name = name;
+//   this.age = age;
+//   this.salary = salary;
+// }
 
-const person1 = new Personel("1234567890", "Ahmet Can", 33, 30000);
-const person2 = new Personel("123456745454", "Mehmet Veli", 23, 10000);
+// const person1 = new Personel("1234567890", "Ahmet Can", 33, 30000);
+// const person2 = new Personel("123456745454", "Mehmet Veli", 23, 10000);
 
-console.log(person1);
+// console.log(person1);
+
+// const personel = {
+//   name: "Ahmet",
+//   surname: "Canan",
+//   dob: 1990,
+//   salary: 30000,
+//   drivingLicense: true,
+//   calculateAge: function () {
+//     return new Date().getFullYear() - this.dob;
+//   },
+//   summary: () => {
+//     console.log(this);
+//     return `${this.name} is ${this.calculateAge()} years old`;
+//   },
+// };
+
+// console.log(personel.name + " " + personel.surname);
+
+// console.log("AGE:", personel.calculateAge());
+
+// console.log(personel.summary());
+
+const team = [
+  {
+    name: "Ahmet",
+    surname: "Can",
+    job: "Developer",
+    age: 30,
+  },
+  {
+    name: "Mary",
+    surname: "Bary",
+    job: "tester",
+    age: 22,
+  },
+  {
+    name: "Hazel",
+    surname: "Nut",
+    job: "developer",
+    age: 20,
+  },
+];
+
+console.log(team);
+console.log(team[1]);
+console.log(team[1].name);
+console.log(team[2].age);
+
+console.log("******");
+team.forEach((p) => console.log(p.job));
+
+const personelAges = team.map((person) => person.age + 1);
+console.log(personelAges);
+
+const teamFullName = team.map((p) => {
+  return {
+    fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+    age: p.age + 5,
+  };
+});
+console.log(teamFullName);
+
+const teamFullName1 = team.map((p) => ({
+  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+  age: p.age + 5,
+}));
+
+console.log(teamFullName1);
